@@ -7,3 +7,5 @@ RUN docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-di
 RUN docker-php-ext-configure intl && docker-php-ext-install intl
 
 RUN docker-php-ext-install pdo_mysql zip
+
+RUN apt-get autoremove
